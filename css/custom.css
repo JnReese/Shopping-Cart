@@ -1,0 +1,24 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+* {
+  z-index: 1;
+  color: white;
+}
+#calcButton {
+  margin-right: 300px;
+}
+
+h1 {
+  margin-top: 2em;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+}
+
+#background {
+  position: relative;
+  bottom: 480px;
+  z-index: 0;
+}
+
+
