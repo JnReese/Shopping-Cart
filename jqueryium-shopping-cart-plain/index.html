@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+  <title> Nice Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/application.js"></script>
+  </body>
+
+</head>
+
+<body>
+
+  <div class="columns">
+    <div class="column is-offset-1" id="shoppingCartLogo">
+      <h1>Shopping Cart </h1>
+    </div>
+  </div>
+  <div class="collumnsContainer">
+    <div class="columns infoSector" id="defaultItem">
+      <div class="column is-offset-1 is-one-quarter groceryItem" id="defaultRow">
+        Salmon
+      </div>
+      <div class="column is-one-quarter pricePerItem">
+        0
+      </div>
+      <div class="column is-one-quarter">
+        QTY
+        <input class="button is-rounded numberOfItems" type="number" placeholder="Add Number" value="0"></input>
+        <button class="delete is-large btn-danger"></button>
+      </div>
+      <div class="column is-one-quarter costOfItems">
+      </div>
+    </div>
+  </div>
+
+  <div class="columns" id="inputsDiv">
+    <div class="column is-one-quarter is-offset-1">
+      <div class="field">
+        <div class="control">
+          <input class="input" id="itemInput" placeholder="item">
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-quarter">
+      <div class="field">
+        <div class="control">
+          <input class="input" id="priceInput" type="number" placeholder="price">
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <button class="button" id="addButton" disabled="true">Add</button>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column is-offset-1">
+      Total Price:
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column is-offset-1" id="finalCost">
+      0
+    </div>
+  </div>
+</body>
+
+</html>
